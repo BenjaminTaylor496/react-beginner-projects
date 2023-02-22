@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import { Counter } from './projects/Counter/Counter';
+
+import { ModalWindow } from './projects/Modal/ModalWindow';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+	<React.StrictMode>
+		<ModalWindow />
+	</React.StrictMode>,
 );
