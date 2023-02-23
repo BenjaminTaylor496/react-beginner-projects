@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Counter } from './projects/Counter/Counter';
+// import { Counter } from './projects/Counter/Counter';
 
 import { ModalWindow } from './projects/Modal/ModalWindow';
 
