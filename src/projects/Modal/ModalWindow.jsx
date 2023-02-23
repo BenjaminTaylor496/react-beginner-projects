@@ -1,6 +1,6 @@
 import './index.scss';
 import React from 'react';
-import { Modal } from './Modal';
+import { Modal } from './components/Modal';
 
 export const ModalWindow = () => {
 	const [open, setOpen] = React.useState(false);
