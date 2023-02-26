@@ -11,14 +11,14 @@ import { Game } from './components/Game';
 
 export const Quiz = () => {
 	const [step, setStep] = React.useState(0);
-	/**C помощью 'React.useState(0)' говорю, надо отрендерить первый вопрос
+	/** Говорю 'React.useState(0)' , что надо отрендерить первый вопрос
 	 * Теперь с помощью 'step' надо выбрать 1 из объектов, который хранится в 'questions'
 	 */
 
 	/**useState внизу будет отвечать за количество правильных ответов из общей суммы вопросов которые есть в компоненте questions */
 	const [correct, setCorrect] = React.useState(0);
 
-	const question = questions[step]; //С помощью переменной question, по индексу беру вопрос из массива questions
+	const question = questions[step]; //С помощью переменной question, по индексу бери вопрос из массива questions
 
 	const onClickVariant = index => {
 		/**Эта функция будет получать 1 из вариантов пусть будет "index"*/
@@ -37,7 +37,7 @@ export const Quiz = () => {
 		<div className='App'>
 			{step !== questions.length ? (
 				/**Теперь вопрос, который был взят из массива был передан внутрь компонента 'Game'*/
-				<Game question={question} onClickVariant={onClickVariant} />
+				<Game step={step} question={question} onClickVariant={onClickVariant} />
 			) : (
 				<Result correct={correct} />
 			)}
